@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004C08381CBA507E004434D8 /* Members.json in Resources */ = {isa = PBXBuildFile; fileRef = 004C08371CBA507E004434D8 /* Members.json */; };
 		00CF377A1CB931A800975BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF37791CB931A800975BCA /* AppDelegate.swift */; };
 		00CF377C1CB931A800975BCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF377B1CB931A800975BCA /* ViewController.swift */; };
 		00CF377F1CB931A800975BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF377D1CB931A800975BCA /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		004C08371CBA507E004434D8 /* Members.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Members.json; sourceTree = "<group>"; };
 		00CF37761CB931A800975BCA /* MagicJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CF37791CB931A800975BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00CF377B1CB931A800975BCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		00CF378B1CB931D300975BCA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				004C08371CBA507E004434D8 /* Members.json */,
 				00CF378C1CB931D300975BCA /* Array_of_customers.json */,
 				00CF378D1CB931D300975BCA /* Curries.swift */,
 				00CF378E1CB931D300975BCA /* Functions.swift */,
@@ -145,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004C08381CBA507E004434D8 /* Members.json in Resources */,
 				00CF37841CB931A800975BCA /* LaunchScreen.storyboard in Resources */,
 				00CF37811CB931A800975BCA /* Assets.xcassets in Resources */,
 				00CF37911CB931D300975BCA /* Array_of_customers.json in Resources */,
@@ -314,6 +318,7 @@
 				00CF378A1CB931A800975BCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -46,7 +46,10 @@ func parseCustomer(data: [String : AnyObject]) -> Customer? {
 
 
 
-
+func parseMember(data: [String : AnyObject]) -> Member? {
+    return makeMember <*> filter(data, key: "member_id")
+                      <*> filter(data, key: "name")
+}
 
 
 

@@ -1,0 +1,31 @@
+{
+    "status": 200,
+    "response": {
+        "request_id": 1386,
+        "result": {
+            "department_name": "National Savings",
+            "members": [
+                        {
+                        "member_id": 0,
+                        "name": "Essie Ferrell"
+                        },
+                        {
+                        "member_id": 1,
+                        "name": "Jaclyn Oneill"
+                        },
+                        {
+                        "member_id": 2,
+                        "name": "Forbes Tillman"
+                        },
+                        {
+                        "member_id": 3,
+                        "name": "Fry Odonnell"
+                        },
+                        {
+                        "member_id": 4,
+                        "name": "Ball Frazier"
+                        }
+                        ]
+        }
+    }
+}

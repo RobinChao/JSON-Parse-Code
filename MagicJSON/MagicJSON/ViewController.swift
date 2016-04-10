@@ -32,7 +32,22 @@ class ViewController: UIViewController {
         }
         
         print(customers)
+     
         
+        
+        
+        // Parse Member
+        let member = NSBundle.mainBundle().pathForResource("Members", ofType: "json")
+        
+        guard let memberData = NSData(contentsOfFile: member!),
+            let memberJSON = try? NSJSONSerialization.JSONObjectWithData(memberData, options: []) else {
+                print("Couldn't load JSON file")
+                exit(1)
+        }
+        
+        let members = filter(memberJSON) <~~ keyPath("response.result.members") <<~ parseMember
+        
+        print(members)
     }
 
     override func didReceiveMemoryWarning() {

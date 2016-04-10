@@ -29,6 +29,11 @@ struct Customer  {
     let skills: [String]
 }
 
+struct Member {
+    let memberID: Int
+    let name: String
+}
+
 
 //Curried initializers
 func makeAddress(street: String) -> (city: String) -> (state: String) -> Address {
@@ -45,3 +50,15 @@ func makeCustomer(name: String) -> (age: Int) -> (gender: Gender) -> (address: A
         }}}
     }
 }
+
+
+
+
+func makeMember(memberID: Int) -> (name: String) -> Member {
+    return { name in
+        return Member(memberID: memberID, name: name)
+    }
+}
+
+
+
