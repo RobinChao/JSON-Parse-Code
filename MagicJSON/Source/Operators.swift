@@ -46,3 +46,22 @@ func <<~<A, B>(x: [A]?, f: (A -> B?)) -> [B]? {
     }
     return x.map(f).flatMap{ $0 }
 }
+
+
+
+infix operator <?> {
+    associativity left
+    precedence 100
+} //左结合的left，优先级100
+
+
+func <?><A, B>(f: (A? -> B)?, x: A?) -> B? {
+    guard let f = f else {
+        return nil
+    }
+    return f(x)
+}
+
+
+
+

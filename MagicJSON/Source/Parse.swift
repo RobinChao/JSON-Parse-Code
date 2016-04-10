@@ -40,7 +40,7 @@ func parseCustomer(data: [String : AnyObject]) -> Customer? {
     return makeCustomer <*> filter(data, key: "name") <~~ parseName
                         <*> filter(data, key: "age")
                         <*> filter(data, key: "gender") <~~ parseGender
-                        <*> filter(data, key: "address") <~~ parseAddress
+                        <?> filter(data, key: "address") <~~ parseAddress
                         <*> filter(data, key: "skills")
 }
 
